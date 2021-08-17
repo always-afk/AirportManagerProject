@@ -6,4 +6,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AirportManager.BusinessLogic\AirportManager.BusinessLogic.csproj" />
+  </ItemGroup>
+
 </Project>
