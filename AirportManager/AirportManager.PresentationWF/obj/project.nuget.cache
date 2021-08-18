@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GNxV+FGDURkb8LdqAcgFWPQHzc2PPGqsC8GmLmX8Px3Uw9Tw0P+4HyDWML96vBJPRADz7ZvbWPlyO6lCJrtzSw==",
+  "dgSpecHash": "7idNkUnLvZz+NWqjQZaV/MShJNlDWaVBzZhQxXyrv8sVunBK+2z44hCs7DR8YXrzbS8hFvYBctmyjzkfgfernA==",
   "success": true,
   "projectFilePath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.PresentationWF\\AirportManager.PresentationWF.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,7 @@
     "C:\\Users\\artem\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\simpleinjector\\5.3.2\\simpleinjector.5.3.2.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
