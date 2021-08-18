@@ -58,3 +58,4 @@ D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.PresentationWF\obj\D
 D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.genruntimeconfig.cache
 D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.PresentationWF\bin\Debug\net5.0-windows\Humanizer.dll
 D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.PresentationWF\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.PresentationWF\bin\Debug\net5.0-windows\SimpleInjector.dll
