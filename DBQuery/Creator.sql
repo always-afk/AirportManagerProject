@@ -78,7 +78,7 @@ go
 
 create table Flights(
 	Id int primary key identity(1,1),
-	[Date] date not null,
+	[Date] datetime not null,
 	PlaneId int references Planes(Id),
 	DestinationId int references Airports(Id),
 	LineId int references Lines(Id)
@@ -88,7 +88,7 @@ go
 
 create table Tickets(
 	Id int primary key identity(1,1),
-	[Date] date not null,
+	[Date] datetime not null,
 	[Price] float not null,
 	[ClientId] int references Clients(Id),
 	[FlightId] int references Flights(Id)
