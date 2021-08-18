@@ -1,0 +1,15 @@
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\bin\Debug\net5.0\AirportManager.BusinessLogic.deps.json
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\bin\Debug\net5.0\AirportManager.BusinessLogic.dll
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\bin\Debug\net5.0\ref\AirportManager.BusinessLogic.dll
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\bin\Debug\net5.0\AirportManager.BusinessLogic.pdb
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\bin\Debug\net5.0\AirportManager.DataAccess.dll
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\bin\Debug\net5.0\AirportManager.DataAccess.pdb
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\obj\Debug\net5.0\AirportManager.BusinessLogic.csproj.AssemblyReference.cache
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\obj\Debug\net5.0\AirportManager.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\obj\Debug\net5.0\AirportManager.BusinessLogic.AssemblyInfoInputs.cache
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\obj\Debug\net5.0\AirportManager.BusinessLogic.AssemblyInfo.cs
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\obj\Debug\net5.0\AirportManager.BusinessLogic.csproj.CoreCompileInputs.cache
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\obj\Debug\net5.0\AirportManager.BusinessLogic.csproj.CopyComplete
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\obj\Debug\net5.0\AirportManager.BusinessLogic.dll
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\obj\Debug\net5.0\ref\AirportManager.BusinessLogic.dll
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.BusinessLogic\obj\Debug\net5.0\AirportManager.BusinessLogic.pdb

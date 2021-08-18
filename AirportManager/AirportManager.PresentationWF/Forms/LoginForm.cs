@@ -8,14 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AirportManager.PresentationWF
+namespace AirportManager.PresentationWF.Forms
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
         }
 
+        private void _signInButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

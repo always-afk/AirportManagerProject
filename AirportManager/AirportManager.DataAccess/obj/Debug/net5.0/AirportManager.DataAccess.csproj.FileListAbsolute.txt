@@ -1,0 +1,15 @@
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\bin\Debug\net5.0\AirportManager.DataAccess.deps.json
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\bin\Debug\net5.0\AirportManager.DataAccess.runtimeconfig.json
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\bin\Debug\net5.0\AirportManager.DataAccess.runtimeconfig.dev.json
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\bin\Debug\net5.0\AirportManager.DataAccess.dll
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\bin\Debug\net5.0\ref\AirportManager.DataAccess.dll
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\bin\Debug\net5.0\AirportManager.DataAccess.pdb
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\obj\Debug\net5.0\AirportManager.DataAccess.csproj.AssemblyReference.cache
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\obj\Debug\net5.0\AirportManager.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\obj\Debug\net5.0\AirportManager.DataAccess.AssemblyInfoInputs.cache
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\obj\Debug\net5.0\AirportManager.DataAccess.AssemblyInfo.cs
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\obj\Debug\net5.0\AirportManager.DataAccess.csproj.CoreCompileInputs.cache
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\obj\Debug\net5.0\AirportManager.DataAccess.dll
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\obj\Debug\net5.0\ref\AirportManager.DataAccess.dll
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\obj\Debug\net5.0\AirportManager.DataAccess.pdb
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.DataAccess\obj\Debug\net5.0\AirportManager.DataAccess.genruntimeconfig.cache
