@@ -170,6 +170,9 @@
             "projectReferences": {
               "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj": {
                 "projectPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj"
+              },
+              "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj": {
+                "projectPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj"
               }
             }
           }

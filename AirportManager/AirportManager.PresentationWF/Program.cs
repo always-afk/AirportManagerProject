@@ -30,6 +30,7 @@ namespace AirportManager.PresentationWF
 
         static void Register()
         {
+            
             _container.Register<Forms.LoginForm>(Lifestyle.Singleton);
 
             _container.Verify();

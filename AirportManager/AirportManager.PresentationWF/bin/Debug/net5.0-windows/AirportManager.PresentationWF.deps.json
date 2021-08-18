@@ -9,6 +9,7 @@
       "AirportManager.PresentationWF/1.0.0": {
         "dependencies": {
           "AirportManager.BusinessLogic": "1.0.0",
+          "AirportManager.DataAccess": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.9",
           "SimpleInjector": "5.3.2"
         },
