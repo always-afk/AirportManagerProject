@@ -3,22 +3,21 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace AirportManager.DataAccess.Models.DBModels
+namespace AirportManager.DataAccess.Models.DataModels
 {
-    public partial class Plane
+    public partial class Airport
     {
-        public Plane()
+        public Airport()
         {
             Flights = new HashSet<Flight>();
         }
 
         public int Id { get; set; }
+        public string Iata { get; set; }
         public string Name { get; set; }
-        public string Code { get; set; }
-        public int NumOfSeats { get; set; }
-        public int StaffId { get; set; }
+        public int CountryId { get; set; }
 
-        public virtual Staff Staff { get; set; }
+        public virtual Country Country { get; set; }
         public virtual ICollection<Flight> Flights { get; set; }
     }
 }

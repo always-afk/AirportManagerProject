@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SimpleInjector;
+using SimpleInjector.Diagnostics;
+using SimpleInjector.Lifestyles;
 
 namespace AirportManager.PresentationWF
 {
@@ -30,10 +32,49 @@ namespace AirportManager.PresentationWF
 
         static void Register()
         {
-            
-            _container.Register<Forms.LoginForm>(Lifestyle.Singleton);
+
+            //_container.Register<DataAccess.Context.AirportDBContext>(Lifestyle.Scoped);
+
+            RegisterContext();
+
+            _container.Register<BusinessLogic.Services.Interfaces.IViewService, BusinessLogic.Services.Implementation.ViewService>();
+            _container.Register<BusinessLogic.Services.Interfaces.ILoginService, BusinessLogic.Services.Implementation.LoginService>();
+            _container.Register<DataAccess.Repositories.Interfaces.IUserRepository, DataAccess.Repositories.Implementation.UserRepository>();
+
+            RegisterForms();
 
             _container.Verify();
+        }
+
+        static void RegisterContext()
+        {
+            
+                var registration =
+                    Lifestyle.Transient.CreateRegistration(typeof(DataAccess.Context.AirportDBContext), _container);
+
+                registration.SuppressDiagnosticWarning(
+                DiagnosticType.DisposableTransientComponent,
+                "Forms should be disposed by app code; not by the container.");
+
+                _container.AddRegistration(typeof(DataAccess.Context.AirportDBContext), registration);
+            
+        }
+
+        static void RegisterForms()
+        {
+            var types = _container.GetTypesToRegister<Form>(typeof(Program).Assembly);
+
+            foreach (var type in types)
+            {
+                var registration =
+                    Lifestyle.Transient.CreateRegistration(type, _container);
+
+                registration.SuppressDiagnosticWarning(
+                DiagnosticType.DisposableTransientComponent,
+                "Forms should be disposed by app code; not by the container.");
+
+                _container.AddRegistration(type, registration);
+            }
         }
     }
 }

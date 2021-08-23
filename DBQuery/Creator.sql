@@ -6,6 +6,7 @@ drop table if exists Tickets
 drop table if exists Flights
 drop table if exists Clients
 drop table if exists Planes
+drop table if exists Users
 drop table if exists Staff
 drop table if exists Positions
 drop table if exists Airports
@@ -49,7 +50,13 @@ create table Staff(
 	Id int primary key identity(1,1),
 	[Name] nvarchar(128) unique not null,
 	[Age] int,
-	[PositionId] int references Positions(Id) not null,
+	[PositionId] int references Positions(Id) not null
+)
+
+go
+
+create table Users(
+	Id int primary key references Staff(Id),
 	[Login] nvarchar(16) unique not null,
 	[Password] nvarchar(16) not null
 )

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace AirportManager.DataAccess.Models.DBModels
+namespace AirportManager.DataAccess.Models.DataModels
 {
     public partial class Client
     {

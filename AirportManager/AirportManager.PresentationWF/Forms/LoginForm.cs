@@ -7,22 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AirportManager.DataAccess.Services.Implementation;
+using AirportManager.BusinessLogic.Services.Interfaces;
 
 namespace AirportManager.PresentationWF.Forms
 {
     public partial class LoginForm : Form
     {
-        public LoginForm()
+        private IViewService _viewService;
+        public LoginForm(IViewService viewService)
         {
             InitializeComponent();
+
+            _viewService = viewService;
         }
 
         private void _signInButton_Click(object sender, EventArgs e)
         {
-            DBService service = new DBService();
-            var staff = service.LoadStaff();
-            if (staff.Any(p => p.Login == _loginTextBox.Text && p.Password == _passwordTextBox.Text))
+            if(_viewService.Login(_loginTextBox.Text, _passwordTextBox.Text))
             {
                 MessageBox.Show("Success");
             }

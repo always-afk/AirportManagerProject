@@ -8,4 +8,8 @@
     <ProjectReference Include="..\AirportManager.DataAccess\AirportManager.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 </Project>

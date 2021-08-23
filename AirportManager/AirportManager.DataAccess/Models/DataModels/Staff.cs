@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace AirportManager.DataAccess.Models.DBModels
+namespace AirportManager.DataAccess.Models.DataModels
 {
     public partial class Staff
     {
@@ -16,10 +16,9 @@ namespace AirportManager.DataAccess.Models.DBModels
         public string Name { get; set; }
         public int? Age { get; set; }
         public int PositionId { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
 
         public virtual Position Position { get; set; }
+        public virtual User User { get; set; }
         public virtual ICollection<Plane> Planes { get; set; }
     }
 }

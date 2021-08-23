@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace AirportManager.DataAccess.Models.LogicModels
+namespace AirportManager.DataAccess.Models.DataModels
 {
     public partial class Country
     {
