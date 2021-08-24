@@ -4,23 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AirportManager.DataAccess.Repositories;
+using AirportManager.DataAccess.Models.LogicModels;
 
 namespace AirportManager.BusinessLogic.Services.Implementation
 {
     public class ViewService : Interfaces.IViewService
     {
         private Interfaces.ILoginService _loginService;
-        private DataAccess.Repositories.Interfaces.IUserRepository _userRepository;
+        private DataAccess.Repositories.Interfaces.IStaffRepository _staffRepository;
 
-        public ViewService(Interfaces.ILoginService loginService, DataAccess.Repositories.Interfaces.IUserRepository userRepository)
+        public ViewService(Interfaces.ILoginService loginService, DataAccess.Repositories.Interfaces.IStaffRepository staffRepository)
         {
             _loginService = loginService;
-            _userRepository = userRepository;
+            _staffRepository = staffRepository;
         }
 
-        public bool Login(string login, string password)
+        public Staff Login(string login, string password)
         {
-            return _loginService.Login(login, password, _userRepository.LoadUsers());
+            return _loginService.Login(login, password, _staffRepository.LoadStaff());
         }
     }
 }

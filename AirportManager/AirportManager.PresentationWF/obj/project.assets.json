@@ -1539,6 +1539,16 @@
           "bin/placeholder/AirportManager.BusinessLogic.dll": {}
         }
       },
+      "AirportManager.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/AirportManager.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AirportManager.Common.dll": {}
+        }
+      },
       "AirportManager.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -5861,6 +5871,11 @@
       "path": "../AirportManager.BusinessLogic/AirportManager.BusinessLogic.csproj",
       "msbuildProject": "../AirportManager.BusinessLogic/AirportManager.BusinessLogic.csproj"
     },
+    "AirportManager.Common/1.0.0": {
+      "type": "project",
+      "path": "../AirportManager.Common/AirportManager.Common.csproj",
+      "msbuildProject": "../AirportManager.Common/AirportManager.Common.csproj"
+    },
     "AirportManager.DataAccess/1.0.0": {
       "type": "project",
       "path": "../AirportManager.DataAccess/AirportManager.DataAccess.csproj",
@@ -5870,6 +5885,7 @@
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
       "AirportManager.BusinessLogic >= 1.0.0",
+      "AirportManager.Common >= 1.0.0",
       "AirportManager.DataAccess >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.9",
       "SimpleInjector >= 5.3.2"
@@ -5909,6 +5925,9 @@
           "projectReferences": {
             "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj": {
               "projectPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj"
+            },
+            "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
+              "projectPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj"
             },
             "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj": {
               "projectPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj"

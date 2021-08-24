@@ -12,9 +12,23 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
 {
     public partial class SwitchForm : Form
     {
-        public SwitchForm()
+        private readonly Form _form;
+
+        public SwitchForm(Form form)
         {
+            _form = form;
+
             InitializeComponent();
+        }
+
+        private void SwitchForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _form.Visible = true;
+        }
+
+        private void BackButtonClick(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

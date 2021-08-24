@@ -27,7 +27,7 @@ namespace AirportManager.DataAccess.Context
         public virtual DbSet<Position> Positions { get; set; }
         public virtual DbSet<Ticket> Tickets { get; set; }
         public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<Staff> staff { get; set; }
+        public virtual DbSet<Staff> Staff { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

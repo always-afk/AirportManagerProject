@@ -9,6 +9,6 @@ namespace AirportManager.BusinessLogic.Services.Interfaces
 {
     public interface ILoginService
     {
-        public bool Login(string login, string password, IEnumerable<User> users);
+        public Staff Login(string login, string password, IEnumerable<Staff> staff);
     }
 }

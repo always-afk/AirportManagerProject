@@ -11,9 +11,9 @@ namespace AirportManager.BusinessLogic.Services.Implementation
 {
     public class LoginService : ILoginService
     {
-        public bool Login(string login, string password, IEnumerable<User> users)
+        public Staff Login(string login, string password, IEnumerable<Staff> staff)
         {
-            return users.Any(u => u.Login == login && u.Password == password);
+            return staff.Where(s => s.User.Login == login && s.User.Password == password).FirstOrDefault();
         }
     }
 }

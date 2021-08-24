@@ -23,9 +23,21 @@ namespace AirportManager.PresentationWF.Forms
 
         private void _signInButton_Click(object sender, EventArgs e)
         {
-            if(_viewService.Login(_loginTextBox.Text, _passwordTextBox.Text))
+            var curUser = _viewService.Login(_loginTextBox.Text, _passwordTextBox.Text);
+            if (curUser is not null)
             {
                 MessageBox.Show("Success");
+                switch (curUser.Position.Id)
+                {
+                    case (int)Common.Enums.Positions.Admin:
+                        Form form = new AdminForms.SwitchForm(this);
+                        form.Show();
+                        break;
+                    default:
+                        break;
+                }                
+                
+                Visible = false;
             }
             else
             {

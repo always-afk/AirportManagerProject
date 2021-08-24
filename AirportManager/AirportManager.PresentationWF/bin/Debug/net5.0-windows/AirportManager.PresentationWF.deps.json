@@ -9,6 +9,7 @@
       "AirportManager.PresentationWF/1.0.0": {
         "dependencies": {
           "AirportManager.BusinessLogic": "1.0.0",
+          "AirportManager.Common": "1.0.0",
           "AirportManager.DataAccess": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.9",
           "SimpleInjector": "5.3.2"
@@ -1011,6 +1012,11 @@
           "AirportManager.BusinessLogic.dll": {}
         }
       },
+      "AirportManager.Common/1.0.0": {
+        "runtime": {
+          "AirportManager.Common.dll": {}
+        }
+      },
       "AirportManager.DataAccess/1.0.0": {
         "dependencies": {
           "AutoMapper": "10.1.1",
@@ -1716,6 +1722,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "AirportManager.BusinessLogic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AirportManager.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

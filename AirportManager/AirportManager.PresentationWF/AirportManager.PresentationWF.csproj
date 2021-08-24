@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AirportManager.BusinessLogic\AirportManager.BusinessLogic.csproj" />
+    <ProjectReference Include="..\AirportManager.Common\AirportManager.Common.csproj" />
     <ProjectReference Include="..\AirportManager.DataAccess\AirportManager.DataAccess.csproj" />
   </ItemGroup>
 
