@@ -30,7 +30,7 @@ namespace AirportManager.PresentationWF.Forms
                 switch (curUser.Position.Id)
                 {
                     case (int)Common.Enums.Positions.Admin:
-                        Form form = new AdminForms.SwitchForm(this);
+                        Form form = new AdminForms.SwitchForm(this, _viewService);
                         form.Show();
                         break;
                     default:

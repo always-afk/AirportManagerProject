@@ -39,8 +39,7 @@ namespace AirportManager.PresentationWF
 
             _container.Register<BusinessLogic.Services.Interfaces.IViewService, BusinessLogic.Services.Implementation.ViewService>();
             _container.Register<BusinessLogic.Services.Interfaces.ILoginService, BusinessLogic.Services.Implementation.LoginService>();
-            _container.Register<DataAccess.Repositories.Interfaces.IStaffRepository, DataAccess.Repositories.Implementation.StaffRepository>();
-            _container.Register<DataAccess.Repositories.Interfaces.IUserRepository, DataAccess.Repositories.Implementation.UserRepository>();
+            _container.Register<DataAccess.Repositories.Interfaces.IMainRepository, DataAccess.Repositories.Implementation.MainRepository>();
 
             RegisterForms();
 

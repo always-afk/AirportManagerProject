@@ -11,17 +11,27 @@ namespace AirportManager.BusinessLogic.Services.Implementation
     public class ViewService : Interfaces.IViewService
     {
         private Interfaces.ILoginService _loginService;
-        private DataAccess.Repositories.Interfaces.IStaffRepository _staffRepository;
+        private DataAccess.Repositories.Interfaces.IMainRepository _mainRepository;
 
-        public ViewService(Interfaces.ILoginService loginService, DataAccess.Repositories.Interfaces.IStaffRepository staffRepository)
+        public ViewService(DataAccess.Repositories.Interfaces.IMainRepository mainRepository)
         {
-            _loginService = loginService;
-            _staffRepository = staffRepository;
+            _loginService = new LoginService();
+            _mainRepository = mainRepository;
         }
 
         public Staff Login(string login, string password)
         {
-            return _loginService.Login(login, password, _staffRepository.LoadStaff());
+            return _loginService.Login(login, password, _mainRepository.StaffRepository.LoadStaff());
+        }
+
+        public IEnumerable<Staff> GetStaff()
+        {
+            return _mainRepository.StaffRepository.LoadStaff();
+        }
+
+        public IEnumerable<Position> GetPositions()
+        {
+            return _mainRepository.PositionRepository.LoadPosition();
         }
     }
 }

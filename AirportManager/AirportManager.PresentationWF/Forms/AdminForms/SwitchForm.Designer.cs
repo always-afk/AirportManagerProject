@@ -29,25 +29,37 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
         /// </summary>
         private void InitializeComponent()
         {
-            this.BackButton = new System.Windows.Forms.Button();
+            this._backButton = new System.Windows.Forms.Button();
+            this._staffButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // BackButton
+            // _backButton
             // 
-            this.BackButton.Location = new System.Drawing.Point(12, 415);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(75, 23);
-            this.BackButton.TabIndex = 0;
-            this.BackButton.Text = "Back";
-            this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButtonClick);
+            this._backButton.Location = new System.Drawing.Point(12, 415);
+            this._backButton.Name = "_backButton";
+            this._backButton.Size = new System.Drawing.Size(75, 23);
+            this._backButton.TabIndex = 0;
+            this._backButton.Text = "Back";
+            this._backButton.UseVisualStyleBackColor = true;
+            this._backButton.Click += new System.EventHandler(this.BackButtonClick);
+            // 
+            // _staffButton
+            // 
+            this._staffButton.Location = new System.Drawing.Point(290, 183);
+            this._staffButton.Name = "_staffButton";
+            this._staffButton.Size = new System.Drawing.Size(75, 23);
+            this._staffButton.TabIndex = 1;
+            this._staffButton.Text = "Staff";
+            this._staffButton.UseVisualStyleBackColor = true;
+            this._staffButton.Click += new System.EventHandler(this.StaffButtonClick);
             // 
             // SwitchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.BackButton);
+            this.Controls.Add(this._staffButton);
+            this.Controls.Add(this._backButton);
             this.Name = "SwitchForm";
             this.Text = "SwitchForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SwitchForm_FormClosed);
@@ -57,6 +69,7 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
 
         #endregion
 
-        private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.Button _backButton;
+        private System.Windows.Forms.Button _staffButton;
     }
 }

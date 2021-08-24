@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AirportManager.BusinessLogic.Services.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,16 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AirportManager.BusinessLogic.Services.Interfaces;
 
-namespace AirportManager.PresentationWF.Forms.AdminForms
+namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
 {
-    public partial class SwitchForm : Form
+    public partial class AddStaffForm : Form
     {
         private readonly Form _form;
-        private IViewService _viewService;
+        private readonly IViewService _viewService;
 
-        public SwitchForm(Form form, IViewService viewService)
+        public AddStaffForm(Form form, IViewService viewService)
         {
             _form = form;
             _viewService = viewService;
@@ -24,7 +24,7 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
             InitializeComponent();
         }
 
-        private void SwitchForm_FormClosed(object sender, FormClosedEventArgs e)
+        private void AddStaffForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             _form.Visible = true;
         }
@@ -34,11 +34,9 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
             Close();
         }
 
-        private void StaffButtonClick(object sender, EventArgs e)
+        private void AddStaffForm_Load(object sender, EventArgs e)
         {
-            Form form = new StaffForms.StaffForm(this, _viewService);
-            form.Show();
-            Visible = false;
+            var positions = _viewService.GetPositions();
         }
     }
 }

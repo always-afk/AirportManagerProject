@@ -10,5 +10,7 @@ namespace AirportManager.BusinessLogic.Services.Interfaces
     public interface IViewService
     {
         public Staff Login(string login, string password);
+        public IEnumerable<Staff> GetStaff();
+        public IEnumerable<Position> GetPositions();
     }
 }
