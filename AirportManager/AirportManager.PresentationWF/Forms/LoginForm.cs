@@ -39,6 +39,10 @@ namespace AirportManager.PresentationWF.Forms
                         Form pilotForm = _navigationService.Navigate<PilotForms.MainForm>();
                         pilotForm.Show();
                         break;
+                    case (int)Common.Enums.Positions.Cashier:
+                        Form cashierForm = _navigationService.Navigate<CachierForms.MainForm>();
+                        cashierForm.Show();
+                        break;
                     default:
                         break;
                 }
