@@ -11,9 +11,16 @@ namespace AirportManager.BusinessLogic.Services.Implementation
 {
     public class LoginService : ILoginService
     {
-        public Staff Login(string login, string password, IEnumerable<Staff> staff)
+        private readonly IStaffRepository _staff;
+
+        public LoginService(IStaffRepository staff)
         {
-            return staff.Where(s => s.User.Login == login && s.User.Password == password).FirstOrDefault();
+            _staff = staff;
+        }
+
+        public Staff Login(string login, string password)
+        {
+            return _staff.LoadStaff().Where(s => s.User.Login == login && s.User.Password == password).FirstOrDefault();
         }
     }
 }

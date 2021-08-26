@@ -34,6 +34,22 @@ namespace AirportManager.DataAccess.Repositories.Implementation
             });
         }
 
+        public void Add(Staff staff)
+        {
+            _context.Staff.Add(new Models.DataModels.Staff() 
+            { 
+                Name = staff.Name,
+                Age = staff.Age,
+                PositionId = staff.Position.Id, 
+                User = new Models.DataModels.User
+                {
+                    Login = staff.User.Login,
+                    Password = staff.User.Password
+                }
+            });
+            _context.SaveChanges();
+        }
+
         public void Save(List<Staff> staff)
         {
             throw new NotImplementedException();

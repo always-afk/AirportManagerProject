@@ -13,31 +13,35 @@ namespace AirportManager.PresentationWF.Forms
 {
     public partial class LoginForm : Form
     {
-        private IViewService _viewService;
-        public LoginForm(IViewService viewService)
+        private ILoginService _loginService;
+        private Services.Interfaces.INavigationService _navigationService;
+        public LoginForm(ILoginService loginService, Services.Interfaces.INavigationService navigationService)
         {
             InitializeComponent();
 
-            _viewService = viewService;
+            _loginService = loginService;
+            _navigationService = navigationService;
         }
 
         private void _signInButton_Click(object sender, EventArgs e)
         {
-            var curUser = _viewService.Login(_loginTextBox.Text, _passwordTextBox.Text);
+            var curUser = _loginService.Login(_loginTextBox.Text, _passwordTextBox.Text);
             if (curUser is not null)
             {
                 MessageBox.Show("Success");
                 switch (curUser.Position.Id)
                 {
                     case (int)Common.Enums.Positions.Admin:
-                        Form form = new AdminForms.SwitchForm(this, _viewService);
-                        form.Show();
+                        Form adminForm = _navigationService.Navigate<AdminForms.SwitchForm>();
+                        adminForm.Show();
+                        break;
+                    case (int)Common.Enums.Positions.Pilot:
+                        Form pilotForm = _navigationService.Navigate<PilotForms.MainForm>();
+                        pilotForm.Show();
                         break;
                     default:
                         break;
-                }                
-                
-                Visible = false;
+                }
             }
             else
             {

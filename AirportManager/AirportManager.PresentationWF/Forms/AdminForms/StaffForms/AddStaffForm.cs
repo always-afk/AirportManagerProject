@@ -13,20 +13,13 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
 {
     public partial class AddStaffForm : Form
     {
-        private readonly Form _form;
-        private readonly IViewService _viewService;
+        private readonly IAddStaffService _service;
 
-        public AddStaffForm(Form form, IViewService viewService)
+        public AddStaffForm(IAddStaffService service)
         {
-            _form = form;
-            _viewService = viewService;
+            _service = service;
 
             InitializeComponent();
-        }
-
-        private void AddStaffForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            _form.Visible = true;
         }
 
         private void BackButtonClick(object sender, EventArgs e)
@@ -36,7 +29,40 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
 
         private void AddStaffForm_Load(object sender, EventArgs e)
         {
-            var positions = _viewService.GetPositions();
+            var positions = _service.GetPositions();
+            foreach(var pos in positions)
+            {
+                _positionComboBox.Items.Add(pos.Name);
+                //_positionComboBox.DisplayMember = pos.Name;
+                //_positionComboBox.ValueMember = pos.Id.ToString();
+            }
+        }
+
+        private void AddButtonClick(object sender, EventArgs e)
+        {
+            var person = new DataAccess.Models.LogicModels.Staff();
+
+            try
+            {
+                person.Name = _nameTextBox.Text;
+                person.Age = Convert.ToInt32(_ageTextBox.Text);
+                person.Position = new DataAccess.Models.LogicModels.Position()
+                {
+                    Id = _positionComboBox.SelectedIndex,
+                    Name = _positionComboBox.SelectedItem.ToString()
+                };
+                person.User = new DataAccess.Models.LogicModels.User()
+                {
+                    Login = _loginTextBox.Text,
+                    Password = _passwordTextBox.Text
+                };
+                _service.AddStaff(person);
+                Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

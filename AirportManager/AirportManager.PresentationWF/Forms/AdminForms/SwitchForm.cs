@@ -13,20 +13,13 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
 {
     public partial class SwitchForm : Form
     {
-        private readonly Form _form;
-        private IViewService _viewService;
+        private Services.Interfaces.INavigationService _navigationService;
 
-        public SwitchForm(Form form, IViewService viewService)
+        public SwitchForm(Services.Interfaces.INavigationService navigationService)
         {
-            _form = form;
-            _viewService = viewService;
+            _navigationService = navigationService;
 
             InitializeComponent();
-        }
-
-        private void SwitchForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            _form.Visible = true;
         }
 
         private void BackButtonClick(object sender, EventArgs e)
@@ -36,9 +29,8 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
 
         private void StaffButtonClick(object sender, EventArgs e)
         {
-            Form form = new StaffForms.StaffForm(this, _viewService);
+            Form form = _navigationService.Navigate<StaffForms.StaffForm>();
             form.Show();
-            Visible = false;
         }
     }
 }

@@ -45,7 +45,7 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
             // 
             // _staffButton
             // 
-            this._staffButton.Location = new System.Drawing.Point(290, 183);
+            this._staffButton.Location = new System.Drawing.Point(188, 83);
             this._staffButton.Name = "_staffButton";
             this._staffButton.Size = new System.Drawing.Size(75, 23);
             this._staffButton.TabIndex = 1;
@@ -57,12 +57,11 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(445, 450);
             this.Controls.Add(this._staffButton);
             this.Controls.Add(this._backButton);
             this.Name = "SwitchForm";
             this.Text = "SwitchForm";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SwitchForm_FormClosed);
             this.ResumeLayout(false);
 
         }

@@ -7,8 +7,8 @@ using AirportManager.DataAccess.Models.LogicModels;
 
 namespace AirportManager.BusinessLogic.Services.Interfaces
 {
-    public interface ILoginService
+    public interface IStaffService
     {
-        public Staff Login(string login, string password);
+        public IEnumerable<Staff> GetStaff();
     }
 }

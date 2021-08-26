@@ -7,10 +7,9 @@ using AirportManager.DataAccess.Models.LogicModels;
 
 namespace AirportManager.BusinessLogic.Services.Interfaces
 {
-    public interface IViewService
+    public interface IAddStaffService
     {
-        public Staff Login(string login, string password);
-        public IEnumerable<Staff> GetStaff();
         public IEnumerable<Position> GetPositions();
+        public void AddStaff(Staff staff);
     }
 }

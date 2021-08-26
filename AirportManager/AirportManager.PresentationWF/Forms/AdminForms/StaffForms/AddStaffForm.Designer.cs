@@ -143,6 +143,7 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
             this._addButton.TabIndex = 11;
             this._addButton.Text = "Add";
             this._addButton.UseVisualStyleBackColor = true;
+            this._addButton.Click += new System.EventHandler(this.AddButtonClick);
             // 
             // AddStaffForm
             // 
@@ -163,7 +164,6 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
             this.Controls.Add(this._backButton);
             this.Name = "AddStaffForm";
             this.Text = "AddStaffForm";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddStaffForm_FormClosed);
             this.Load += new System.EventHandler(this.AddStaffForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

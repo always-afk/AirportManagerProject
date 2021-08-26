@@ -12,15 +12,14 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
 {
     public partial class StaffForm : Form
     {
-        private readonly Form _form;
+        private readonly BusinessLogic.Services.Interfaces.IStaffService _staffService;
+        private readonly Services.Interfaces.INavigationService _navigationService;
 
-        private readonly BusinessLogic.Services.Interfaces.IViewService _viewService;
-        private readonly IEnumerable<DataAccess.Models.LogicModels.Staff> _staff;
-
-        public StaffForm(Form form, BusinessLogic.Services.Interfaces.IViewService viewService)
+        public StaffForm(BusinessLogic.Services.Interfaces.IStaffService staffService,
+            Services.Interfaces.INavigationService navigationService)
         {
-            _form = form;
-            _viewService = viewService;
+            _navigationService = navigationService;
+            _staffService = staffService;
 
 
             InitializeComponent();
@@ -31,14 +30,9 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
             Close();
         }
 
-        private void StaffForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            _form.Visible = true;
-        }
-
         private void StaffForm_Load(object sender, EventArgs e)
         {
-            _staffTable.DataSource = _viewService.GetStaff().Select(e => new 
+            _staffTable.DataSource = _staffService.GetStaff().Select(e => new 
             {
                 Name = e.Name,
                 Age = e.Age,
@@ -51,9 +45,8 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
 
         private void AddButtonClick(object sender, EventArgs e)
         {
-            Form form = new AddStaffForm(this, _viewService);
+            Form form = _navigationService.Navigate<AddStaffForm>();
             form.Show();
-            Visible = false;
         }
     }
 }

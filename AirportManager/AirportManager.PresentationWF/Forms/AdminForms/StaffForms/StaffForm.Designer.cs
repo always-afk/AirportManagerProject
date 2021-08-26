@@ -77,7 +77,6 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
             this.Controls.Add(this._backButton);
             this.Name = "StaffForm";
             this.Text = "StaffForm";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.StaffForm_FormClosed);
             this.Load += new System.EventHandler(this.StaffForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this._staffTable)).EndInit();
             this.ResumeLayout(false);
