@@ -67,3 +67,5 @@ D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.PresentationWF\obj\D
 D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.Forms.AdminForms.StaffForms.StaffForm.resources
 D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.Forms.PilotForms.MainForm.resources
 D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.Forms.CachierForms.MainForm.resources
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.Forms.AdminForms.PlanesForms.AddPlaneForm.resources
+D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.Forms.AdminForms.PlanesForms.PlanesForm.resources
