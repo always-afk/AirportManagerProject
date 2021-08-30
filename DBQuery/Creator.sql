@@ -9,32 +9,13 @@ drop table if exists Planes
 drop table if exists Users
 drop table if exists Staff
 drop table if exists Positions
-drop table if exists Airports
 drop table if exists Countries
-drop table if exists Lines
-
-go
-
-create table Lines(
-	Id int primary key identity(1,1),
-	Number int unique not null,
-	IsFree bit default 1
-)
 
 go
 
 create table Countries(
 	Id int primary key identity(1,1),
 	[Name] nvarchar(64) unique not null
-)
-
-go
-
-create table Airports(
-	Id int primary key identity(1,1),
-	IATA nvarchar(3) unique not null,
-	[Name] nvarchar(128) unique null,
-	[CountryId] int references Countries(Id) not null
 )
 
 go
@@ -68,7 +49,7 @@ create table Planes(
 	[Name] nvarchar(64) not null,
 	[Code] nvarchar(8) unique not null,
 	[NumOfSeats] int not null,
-	[StaffId] int references Staff(Id) not null
+	[StaffId] int references Staff(Id) null
 )
 
 go
@@ -87,8 +68,7 @@ create table Flights(
 	Id int primary key identity(1,1),
 	[Date] datetime not null,
 	PlaneId int references Planes(Id),
-	DestinationId int references Airports(Id),
-	LineId int references Lines(Id)
+	DestinationId int references Countries(Id),
 )
 
 go
@@ -101,3 +81,23 @@ create table Tickets(
 	[FlightId] int references Flights(Id)
 )
 
+go
+
+insert Positions values
+('Admin'),
+('Pilot'),
+('Cashier')
+
+go
+
+insert Staff values
+('Admin', 0, 1),
+('Pilot', 0, 2),
+('Cashier', 0, 3)
+
+go
+
+insert Users values
+(1, 'admin', 'admin'),
+(2, 'pilot', 'pilot'),
+(3, 'cashier', 'cashier')

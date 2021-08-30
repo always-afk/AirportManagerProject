@@ -45,5 +45,10 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
         {
             Close();
         }
+
+        private void DeleteButtonClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

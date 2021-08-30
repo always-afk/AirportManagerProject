@@ -32,6 +32,7 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
             this._addButton = new System.Windows.Forms.Button();
             this._planesTable = new System.Windows.Forms.DataGridView();
             this._backButton = new System.Windows.Forms.Button();
+            this._deleteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this._planesTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,11 +72,23 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
             this._backButton.UseVisualStyleBackColor = true;
             this._backButton.Click += new System.EventHandler(this.BackButtonClick);
             // 
+            // _deleteButton
+            // 
+            this._deleteButton.Location = new System.Drawing.Point(381, 553);
+            this._deleteButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this._deleteButton.Name = "_deleteButton";
+            this._deleteButton.Size = new System.Drawing.Size(86, 31);
+            this._deleteButton.TabIndex = 6;
+            this._deleteButton.Text = "Delete";
+            this._deleteButton.UseVisualStyleBackColor = true;
+            this._deleteButton.Click += new System.EventHandler(this.DeleteButtonClick);
+            // 
             // PlanesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 591);
+            this.Controls.Add(this._deleteButton);
             this.Controls.Add(this._addButton);
             this.Controls.Add(this._planesTable);
             this.Controls.Add(this._backButton);
@@ -93,5 +106,6 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
         private System.Windows.Forms.Button _addButton;
         private System.Windows.Forms.DataGridView _planesTable;
         private System.Windows.Forms.Button _backButton;
+        private System.Windows.Forms.Button _deleteButton;
     }
 }
