@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bg6ba6+L64GLctXlmEZPH+VWWj7jVDJgUfK8XWnZhbJaA7edpqttV5elJqKqPc97zkgtx9fVr6IQ+qGqxI8awQ==",
+  "dgSpecHash": "2MGnz95m6IZWbRLIpikpxKMDtDESEbmnLH2SHTyNX/ThwkF/oFKmZq2NrnhUxkzgrABC/sOHcwYRlAX2KQPeQQ==",
   "success": true,
-  "projectFilePath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artem\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

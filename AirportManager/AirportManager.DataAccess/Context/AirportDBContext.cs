@@ -18,11 +18,9 @@ namespace AirportManager.DataAccess.Context
         //{
         //}
 
-        public virtual DbSet<Airport> Airports { get; set; }
         public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<Country> Countries { get; set; }
         public virtual DbSet<Flight> Flights { get; set; }
-        public virtual DbSet<Line> Lines { get; set; }
         public virtual DbSet<Plane> Planes { get; set; }
         public virtual DbSet<Position> Positions { get; set; }
         public virtual DbSet<Ticket> Tickets { get; set; }
@@ -33,35 +31,13 @@ namespace AirportManager.DataAccess.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=AirportDB;User Id=sa; Password = 1234qwer;");
+                optionsBuilder.UseSqlServer("Server=LAPTOP-CV123MF7;Database=AirportDB;Trusted_Connection=True;");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
-
-            modelBuilder.Entity<Airport>(entity =>
-            {
-                entity.HasIndex(e => e.Name, "UQ__Airports__737584F6E9F5ED1C")
-                    .IsUnique();
-
-                entity.HasIndex(e => e.Iata, "UQ__Airports__82F6AFF451465144")
-                    .IsUnique();
-
-                entity.Property(e => e.Iata)
-                    .IsRequired()
-                    .HasMaxLength(3)
-                    .HasColumnName("IATA");
-
-                entity.Property(e => e.Name).HasMaxLength(128);
-
-                entity.HasOne(d => d.Country)
-                    .WithMany(p => p.Airports)
-                    .HasForeignKey(d => d.CountryId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Airports__Countr__5C6CB6D7");
-            });
+            modelBuilder.HasAnnotation("Relational:Collation", "Cyrillic_General_CI_AS");
 
             modelBuilder.Entity<Client>(entity =>
             {
@@ -72,7 +48,7 @@ namespace AirportManager.DataAccess.Context
 
             modelBuilder.Entity<Country>(entity =>
             {
-                entity.HasIndex(e => e.Name, "UQ__Countrie__737584F60709CF99")
+                entity.HasIndex(e => e.Name, "UQ__Countrie__737584F6FC20B84C")
                     .IsUnique();
 
                 entity.Property(e => e.Name)
@@ -87,30 +63,17 @@ namespace AirportManager.DataAccess.Context
                 entity.HasOne(d => d.Destination)
                     .WithMany(p => p.Flights)
                     .HasForeignKey(d => d.DestinationId)
-                    .HasConstraintName("FK__Flights__Destina__7073AF84");
-
-                entity.HasOne(d => d.Line)
-                    .WithMany(p => p.Flights)
-                    .HasForeignKey(d => d.LineId)
-                    .HasConstraintName("FK__Flights__LineId__7167D3BD");
+                    .HasConstraintName("FK__Flights__Destina__4865BE2A");
 
                 entity.HasOne(d => d.Plane)
                     .WithMany(p => p.Flights)
                     .HasForeignKey(d => d.PlaneId)
-                    .HasConstraintName("FK__Flights__PlaneId__6F7F8B4B");
-            });
-
-            modelBuilder.Entity<Line>(entity =>
-            {
-                entity.HasIndex(e => e.Number, "UQ__Lines__78A1A19D8E683FD7")
-                    .IsUnique();
-
-                entity.Property(e => e.IsFree).HasDefaultValueSql("((1))");
+                    .HasConstraintName("FK__Flights__PlaneId__477199F1");
             });
 
             modelBuilder.Entity<Plane>(entity =>
             {
-                entity.HasIndex(e => e.Code, "UQ__Planes__A25C5AA76BCAC118")
+                entity.HasIndex(e => e.Code, "UQ__Planes__A25C5AA7AAFA9EC9")
                     .IsUnique();
 
                 entity.Property(e => e.Code)
@@ -124,13 +87,12 @@ namespace AirportManager.DataAccess.Context
                 entity.HasOne(d => d.Staff)
                     .WithMany(p => p.Planes)
                     .HasForeignKey(d => d.StaffId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Planes__StaffId__6ABAD62E");
+                    .HasConstraintName("FK__Planes__StaffId__42ACE4D4");
             });
 
             modelBuilder.Entity<Position>(entity =>
             {
-                entity.HasIndex(e => e.Name, "UQ__Position__737584F6D799A49C")
+                entity.HasIndex(e => e.Name, "UQ__Position__737584F639530B41")
                     .IsUnique();
 
                 entity.Property(e => e.Name)
@@ -145,17 +107,17 @@ namespace AirportManager.DataAccess.Context
                 entity.HasOne(d => d.Client)
                     .WithMany(p => p.Tickets)
                     .HasForeignKey(d => d.ClientId)
-                    .HasConstraintName("FK__Tickets__ClientI__74444068");
+                    .HasConstraintName("FK__Tickets__ClientI__4B422AD5");
 
                 entity.HasOne(d => d.Flight)
                     .WithMany(p => p.Tickets)
                     .HasForeignKey(d => d.FlightId)
-                    .HasConstraintName("FK__Tickets__FlightI__753864A1");
+                    .HasConstraintName("FK__Tickets__FlightI__4C364F0E");
             });
 
             modelBuilder.Entity<User>(entity =>
             {
-                entity.HasIndex(e => e.Login, "UQ__Users__5E55825BA7E39C69")
+                entity.HasIndex(e => e.Login, "UQ__Users__5E55825B76472C6F")
                     .IsUnique();
 
                 entity.Property(e => e.Id).ValueGeneratedNever();
@@ -172,14 +134,14 @@ namespace AirportManager.DataAccess.Context
                     .WithOne(p => p.User)
                     .HasForeignKey<User>(d => d.Id)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Users__Id__66EA454A");
+                    .HasConstraintName("FK__Users__Id__3EDC53F0");
             });
 
             modelBuilder.Entity<Staff>(entity =>
             {
                 entity.ToTable("Staff");
 
-                entity.HasIndex(e => e.Name, "UQ__Staff__737584F61FC36936")
+                entity.HasIndex(e => e.Name, "UQ__Staff__737584F65EE54464")
                     .IsUnique();
 
                 entity.Property(e => e.Name)
@@ -190,7 +152,7 @@ namespace AirportManager.DataAccess.Context
                     .WithMany(p => p.staff)
                     .HasForeignKey(d => d.PositionId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Staff__PositionI__6319B466");
+                    .HasConstraintName("FK__Staff__PositionI__3B0BC30C");
             });
 
             OnModelCreatingPartial(modelBuilder);

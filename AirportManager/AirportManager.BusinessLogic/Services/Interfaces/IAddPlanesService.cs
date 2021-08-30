@@ -10,6 +10,6 @@ namespace AirportManager.BusinessLogic.Services.Interfaces
     public interface IAddPlanesService
     {
         public IEnumerable<Staff> GetStaff();
-        public void Add(Staff staff);
+        public void Add(Plane plane);
     }
 }

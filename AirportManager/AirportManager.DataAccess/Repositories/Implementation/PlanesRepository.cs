@@ -16,9 +16,28 @@ namespace AirportManager.DataAccess.Repositories.Implementation
             _context = context;
         }
 
+
         public void AddPlane(Plane plane)
         {
-            throw new NotImplementedException();
+            if (String.IsNullOrEmpty(plane.Staff))
+            {
+                _context.Planes.Add(new Models.DataModels.Plane()
+                {
+                    Name = plane.Name,
+                    Code = plane.Code,
+                    NumOfSeats = plane.NumOfSeats
+                });
+            }
+            else
+            {
+                _context.Planes.Add(new Models.DataModels.Plane()
+                {
+                    Name = plane.Name,
+                    Code = plane.Code,
+                    NumOfSeats = plane.NumOfSeats,
+                    StaffId = _context.Staff.Where(s => s.Name == plane.Staff).FirstOrDefault().Id
+                });
+            }            
         }
 
         public IEnumerable<Plane> LoadPlanes()
@@ -34,7 +53,7 @@ namespace AirportManager.DataAccess.Repositories.Implementation
 
         public void Save()
         {
-            throw new NotImplementedException();
+            _context.SaveChanges();
         }
     }
 }

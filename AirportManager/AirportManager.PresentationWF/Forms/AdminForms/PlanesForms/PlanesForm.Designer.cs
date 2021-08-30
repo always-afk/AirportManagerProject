@@ -37,9 +37,10 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
             // 
             // _addButton
             // 
-            this._addButton.Location = new System.Drawing.Point(253, 415);
+            this._addButton.Location = new System.Drawing.Point(289, 553);
+            this._addButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._addButton.Name = "_addButton";
-            this._addButton.Size = new System.Drawing.Size(75, 23);
+            this._addButton.Size = new System.Drawing.Size(86, 31);
             this._addButton.TabIndex = 5;
             this._addButton.Text = "Add";
             this._addButton.UseVisualStyleBackColor = true;
@@ -50,30 +51,35 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
             this._planesTable.AllowUserToAddRows = false;
             this._planesTable.AllowUserToDeleteRows = false;
             this._planesTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this._planesTable.Location = new System.Drawing.Point(12, 12);
+            this._planesTable.Location = new System.Drawing.Point(14, 16);
+            this._planesTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._planesTable.Name = "_planesTable";
             this._planesTable.ReadOnly = true;
+            this._planesTable.RowHeadersWidth = 51;
             this._planesTable.RowTemplate.Height = 25;
-            this._planesTable.Size = new System.Drawing.Size(676, 397);
+            this._planesTable.Size = new System.Drawing.Size(773, 529);
             this._planesTable.TabIndex = 4;
             // 
             // _backButton
             // 
-            this._backButton.Location = new System.Drawing.Point(12, 415);
+            this._backButton.Location = new System.Drawing.Point(14, 553);
+            this._backButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._backButton.Name = "_backButton";
-            this._backButton.Size = new System.Drawing.Size(75, 23);
+            this._backButton.Size = new System.Drawing.Size(86, 31);
             this._backButton.TabIndex = 3;
             this._backButton.Text = "Back";
             this._backButton.UseVisualStyleBackColor = true;
+            this._backButton.Click += new System.EventHandler(this.BackButtonClick);
             // 
             // PlanesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 450);
+            this.ClientSize = new System.Drawing.Size(808, 591);
             this.Controls.Add(this._addButton);
             this.Controls.Add(this._planesTable);
             this.Controls.Add(this._backButton);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PlanesForm";
             this.Text = "PlanesForm";
             this.Load += new System.EventHandler(this.PlanesForm_Load);

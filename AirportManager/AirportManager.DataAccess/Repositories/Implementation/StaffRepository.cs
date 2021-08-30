@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 namespace AirportManager.DataAccess.Repositories.Implementation
 {
     public class StaffRepository : Interfaces.IStaffRepository
-    {
+    {      
+
         private readonly Context.AirportDBContext _context;
 
         public StaffRepository(Context.AirportDBContext context)
@@ -18,13 +19,14 @@ namespace AirportManager.DataAccess.Repositories.Implementation
 
         public IEnumerable<Staff> LoadStaff()
         {
-            return _context.Staff.Select(s => new Staff {
+            return _context.Staff.Select(s => new Staff
+            {
                 Name = s.Name,
                 Age = s.Age,
-                Position = new Position 
+                Position = new Position
                 {
                     Id = s.Position.Id,
-                    Name = s.Position.Name 
+                    Name = s.Position.Name
                 },
                 User = new User
                 {
@@ -36,11 +38,11 @@ namespace AirportManager.DataAccess.Repositories.Implementation
 
         public void Add(Staff staff)
         {
-            _context.Staff.Add(new Models.DataModels.Staff() 
-            { 
+            _context.Staff.Add(new Models.DataModels.Staff()
+            {
                 Name = staff.Name,
                 Age = staff.Age,
-                PositionId = staff.Position.Id, 
+                PositionId = staff.Position.Id,
                 User = new Models.DataModels.User
                 {
                     Login = staff.User.Login,

@@ -40,5 +40,10 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
                 Pilot = p.Staff
             }).ToList();
         }
+
+        private void BackButtonClick(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

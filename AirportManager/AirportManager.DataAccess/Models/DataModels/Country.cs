@@ -9,12 +9,12 @@ namespace AirportManager.DataAccess.Models.DataModels
     {
         public Country()
         {
-            Airports = new HashSet<Airport>();
+            Flights = new HashSet<Flight>();
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public virtual ICollection<Airport> Airports { get; set; }
+        public virtual ICollection<Flight> Flights { get; set; }
     }
 }

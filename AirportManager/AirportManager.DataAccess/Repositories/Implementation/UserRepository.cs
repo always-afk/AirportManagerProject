@@ -1,4 +1,5 @@
 ﻿using AirportManager.DataAccess.Models;
+using AirportManager.DataAccess.Models.LogicModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace AirportManager.DataAccess.Repositories.Implementation
             return _context.Users.Select(u => new Models.LogicModels.User { Login = u.Login, Password = u.Password });
         }
 
-        public void Save(List<Models.LogicModels.User> users)
+        public void Save(List<User> users)
         {
             throw new NotImplementedException();
         }

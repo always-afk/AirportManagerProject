@@ -16,7 +16,7 @@ namespace AirportManager.DataAccess.Models.DataModels
         public string Name { get; set; }
         public string Code { get; set; }
         public int NumOfSeats { get; set; }
-        public int StaffId { get; set; }
+        public int? StaffId { get; set; }
 
         public virtual Staff Staff { get; set; }
         public virtual ICollection<Flight> Flights { get; set; }

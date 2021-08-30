@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/RyoGgg9KjO1pcZcb154gqka943NgDr6Mku7H6CcEvU79Z/WaSZBXqRPdXwtaSpiKMJk1CC9NgwgrOlUkwZCxQ==",
+  "dgSpecHash": "oMG5BQJooQcNOv1Zd++Z3xogPmovr9Jmw0aHvqDw4HXqgE+3xlislok4//8fYTKc9POnA0TMPXkB07I2e3A8EA==",
   "success": true,
-  "projectFilePath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj",
+  "projectFilePath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artem\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

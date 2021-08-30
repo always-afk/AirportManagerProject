@@ -61,6 +61,8 @@ namespace AirportManager.PresentationWF
                 BusinessLogic.Services.Implementation.StaffService>();
             _container.Register<BusinessLogic.Services.Interfaces.IPlanesService,
                 BusinessLogic.Services.Implementation.PlanesService>();
+            _container.Register<BusinessLogic.Services.Interfaces.IAddPlanesService,
+                BusinessLogic.Services.Implementation.AddPlaneService>();
         }
 
         static void RegisterDataAccess()
@@ -75,16 +77,16 @@ namespace AirportManager.PresentationWF
 
         static void RegisterContext()
         {
-            
-                var registration =
-                    Lifestyle.Transient.CreateRegistration(typeof(DataAccess.Context.AirportDBContext), _container);
 
-                registration.SuppressDiagnosticWarning(
-                DiagnosticType.DisposableTransientComponent,
-                "Forms should be disposed by app code; not by the container.");
+            var registration =
+                Lifestyle.Transient.CreateRegistration(typeof(DataAccess.Context.AirportDBContext), _container);
 
-                _container.AddRegistration(typeof(DataAccess.Context.AirportDBContext), registration);
-            
+            registration.SuppressDiagnosticWarning(
+            DiagnosticType.DisposableTransientComponent,
+            "Forms should be disposed by app code; not by the container.");
+
+            _container.AddRegistration(typeof(DataAccess.Context.AirportDBContext), registration);
+
         }
 
         static void RegisterForms()

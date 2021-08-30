@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.PresentationWF\\AirportManager.PresentationWF.csproj": {}
+    "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.PresentationWF\\AirportManager.PresentationWF.csproj": {}
   },
   "projects": {
-    "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj": {
+    "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj",
         "projectName": "AirportManager.BusinessLogic",
-        "projectPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj",
+        "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-        "outputPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.BusinessLogic\\obj\\",
+        "outputPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj": {
-                "projectPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj"
+              "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj"
               }
             }
           }
@@ -62,18 +62,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
+    "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj",
+        "projectUniqueName": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj",
         "projectName": "AirportManager.Common",
-        "projectPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj",
+        "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj",
         "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-        "outputPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.Common\\obj\\",
+        "outputPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -120,18 +120,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj": {
+    "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj",
         "projectName": "AirportManager.DataAccess",
-        "projectPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj",
+        "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj",
         "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-        "outputPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -198,18 +198,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.PresentationWF\\AirportManager.PresentationWF.csproj": {
+    "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.PresentationWF\\AirportManager.PresentationWF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.PresentationWF\\AirportManager.PresentationWF.csproj",
+        "projectUniqueName": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.PresentationWF\\AirportManager.PresentationWF.csproj",
         "projectName": "AirportManager.PresentationWF",
-        "projectPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.PresentationWF\\AirportManager.PresentationWF.csproj",
+        "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.PresentationWF\\AirportManager.PresentationWF.csproj",
         "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-        "outputPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.PresentationWF\\obj\\",
+        "outputPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.PresentationWF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -230,14 +230,14 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj": {
-                "projectPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj"
+              "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj"
               },
-              "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
-                "projectPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj"
+              "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
+                "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj"
               },
-              "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj": {
-                "projectPath": "D:\\Artyom\\Studing\\TMS\\Project\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj"
+              "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj"
               }
             }
           }
@@ -281,7 +281,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

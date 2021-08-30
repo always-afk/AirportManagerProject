@@ -10,3 +10,15 @@ D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.Common\obj\Debug\net
 D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.Common\obj\Debug\net5.0\AirportManager.Common.dll
 D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.Common\obj\Debug\net5.0\ref\AirportManager.Common.dll
 D:\Artyom\Studing\TMS\Project\AirportManager\AirportManager.Common\obj\Debug\net5.0\AirportManager.Common.pdb
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.Common\bin\Debug\net5.0\AirportManager.Common.deps.json
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.Common\bin\Debug\net5.0\AirportManager.Common.dll
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.Common\bin\Debug\net5.0\ref\AirportManager.Common.dll
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.Common\bin\Debug\net5.0\AirportManager.Common.pdb
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.Common\obj\Debug\net5.0\AirportManager.Common.csproj.AssemblyReference.cache
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.Common\obj\Debug\net5.0\AirportManager.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.Common\obj\Debug\net5.0\AirportManager.Common.AssemblyInfoInputs.cache
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.Common\obj\Debug\net5.0\AirportManager.Common.AssemblyInfo.cs
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.Common\obj\Debug\net5.0\AirportManager.Common.csproj.CoreCompileInputs.cache
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.Common\obj\Debug\net5.0\AirportManager.Common.dll
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.Common\obj\Debug\net5.0\ref\AirportManager.Common.dll
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.Common\obj\Debug\net5.0\AirportManager.Common.pdb
