@@ -1,1 +1,1 @@
-Scaffold-DbContext "Server=LAPTOP-CV123MF7;Database=AirportDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models\DataModels -ContextDir Context
+Scaffold-DbContext "Server=LAPTOP-CV123MF7;Database=AirportDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models\DataModels -ContextDir Context -Force

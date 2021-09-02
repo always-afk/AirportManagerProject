@@ -1,5 +1,5 @@
 ﻿using AirportManager.DataAccess.Models;
-using AirportManager.DataAccess.Models.LogicModels;
+using AirportManager.Common.Entites;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +17,9 @@ namespace AirportManager.DataAccess.Repositories.Implementation
             _context = context;
         }
 
-        public IEnumerable<Models.LogicModels.User> LoadUsers()
+        public IEnumerable<User> LoadUsers()
         {
-            return _context.Users.Select(u => new Models.LogicModels.User { Login = u.Login, Password = u.Password });
+            return _context.Users.Select(u => new User { Login = u.Login, Password = u.Password });
         }
 
         public void Save(List<User> users)

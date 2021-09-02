@@ -28,3 +28,5 @@ C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\
 C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.BusinessLogic\obj\Debug\net5.0\AirportManager.BusinessLogic.dll
 C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.BusinessLogic\obj\Debug\net5.0\ref\AirportManager.BusinessLogic.dll
 C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.BusinessLogic\obj\Debug\net5.0\AirportManager.BusinessLogic.pdb
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.BusinessLogic\bin\Debug\net5.0\AirportManager.Common.dll
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.BusinessLogic\bin\Debug\net5.0\AirportManager.Common.pdb

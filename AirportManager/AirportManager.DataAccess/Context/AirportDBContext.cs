@@ -73,13 +73,6 @@ namespace AirportManager.DataAccess.Context
 
             modelBuilder.Entity<Plane>(entity =>
             {
-                entity.HasIndex(e => e.Code, "UQ__Planes__A25C5AA7AAFA9EC9")
-                    .IsUnique();
-
-                entity.Property(e => e.Code)
-                    .IsRequired()
-                    .HasMaxLength(8);
-
                 entity.Property(e => e.Name)
                     .IsRequired()
                     .HasMaxLength(64);

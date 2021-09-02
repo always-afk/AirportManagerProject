@@ -30,7 +30,7 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
         private void InitializeComponent()
         {
             this._backButton = new System.Windows.Forms.Button();
-            this._staffButton = new System.Windows.Forms.Button();
+            this._StaffButton = new System.Windows.Forms.Button();
             this._planesButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -44,15 +44,15 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
             this._backButton.UseVisualStyleBackColor = true;
             this._backButton.Click += new System.EventHandler(this.BackButtonClick);
             // 
-            // _staffButton
+            // _StaffButton
             // 
-            this._staffButton.Location = new System.Drawing.Point(188, 83);
-            this._staffButton.Name = "_staffButton";
-            this._staffButton.Size = new System.Drawing.Size(75, 23);
-            this._staffButton.TabIndex = 1;
-            this._staffButton.Text = "Staff";
-            this._staffButton.UseVisualStyleBackColor = true;
-            this._staffButton.Click += new System.EventHandler(this.StaffButtonClick);
+            this._StaffButton.Location = new System.Drawing.Point(188, 83);
+            this._StaffButton.Name = "_StaffButton";
+            this._StaffButton.Size = new System.Drawing.Size(75, 23);
+            this._StaffButton.TabIndex = 1;
+            this._StaffButton.Text = "Staff";
+            this._StaffButton.UseVisualStyleBackColor = true;
+            this._StaffButton.Click += new System.EventHandler(this.StaffButtonClick);
             // 
             // _planesButton
             // 
@@ -70,7 +70,7 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(445, 450);
             this.Controls.Add(this._planesButton);
-            this.Controls.Add(this._staffButton);
+            this.Controls.Add(this._StaffButton);
             this.Controls.Add(this._backButton);
             this.Name = "SwitchForm";
             this.Text = "SwitchForm";
@@ -81,7 +81,7 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
         #endregion
 
         private System.Windows.Forms.Button _backButton;
-        private System.Windows.Forms.Button _staffButton;
+        private System.Windows.Forms.Button _StaffButton;
         private System.Windows.Forms.Button _planesButton;
     }
 }

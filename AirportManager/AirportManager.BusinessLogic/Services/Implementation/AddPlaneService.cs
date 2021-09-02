@@ -1,4 +1,4 @@
-﻿using AirportManager.DataAccess.Models.LogicModels;
+﻿using AirportManager.Common.Entites;
 using AirportManager.DataAccess.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -25,9 +25,20 @@ namespace AirportManager.BusinessLogic.Services.Implementation
             _planesRepository.Save();
         }
 
+        public void Add(string name, int num, string staff)
+        {
+            _planesRepository.AddPlane(new Plane() 
+            {
+                Name = name,
+                NumOfSeats = num,
+                Staff = staff
+            });
+            _planesRepository.Save();
+        }
+
         public IEnumerable<Staff> GetStaff()
         {
-            return _staffRepository.LoadStaff().Where(s => s.Position.Name == "Pilot");
+            return _staffRepository.LoadStaff().Where(s => s.Position == Common.Enums.Positions.Pilot);
         }
     }
 }

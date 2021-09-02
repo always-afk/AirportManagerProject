@@ -30,9 +30,9 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
         private void InitializeComponent()
         {
             this._backButton = new System.Windows.Forms.Button();
-            this._staffTable = new System.Windows.Forms.DataGridView();
+            this._StaffTable = new System.Windows.Forms.DataGridView();
             this._addButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this._staffTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._StaffTable)).BeginInit();
             this.SuspendLayout();
             // 
             // _backButton
@@ -45,17 +45,17 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
             this._backButton.UseVisualStyleBackColor = true;
             this._backButton.Click += new System.EventHandler(this.BackButtonClick);
             // 
-            // _staffTable
+            // _StaffTable
             // 
-            this._staffTable.AllowUserToAddRows = false;
-            this._staffTable.AllowUserToDeleteRows = false;
-            this._staffTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this._staffTable.Location = new System.Drawing.Point(12, 12);
-            this._staffTable.Name = "_staffTable";
-            this._staffTable.ReadOnly = true;
-            this._staffTable.RowTemplate.Height = 25;
-            this._staffTable.Size = new System.Drawing.Size(676, 397);
-            this._staffTable.TabIndex = 1;
+            this._StaffTable.AllowUserToAddRows = false;
+            this._StaffTable.AllowUserToDeleteRows = false;
+            this._StaffTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this._StaffTable.Location = new System.Drawing.Point(12, 12);
+            this._StaffTable.Name = "_StaffTable";
+            this._StaffTable.ReadOnly = true;
+            this._StaffTable.RowTemplate.Height = 25;
+            this._StaffTable.Size = new System.Drawing.Size(676, 397);
+            this._StaffTable.TabIndex = 1;
             // 
             // _addButton
             // 
@@ -73,12 +73,12 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 450);
             this.Controls.Add(this._addButton);
-            this.Controls.Add(this._staffTable);
+            this.Controls.Add(this._StaffTable);
             this.Controls.Add(this._backButton);
             this.Name = "StaffForm";
             this.Text = "StaffForm";
             this.Load += new System.EventHandler(this.StaffForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this._staffTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._StaffTable)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -86,7 +86,7 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
         #endregion
 
         private System.Windows.Forms.Button _backButton;
-        private System.Windows.Forms.DataGridView _staffTable;
+        private System.Windows.Forms.DataGridView _StaffTable;
         private System.Windows.Forms.Button _addButton;
     }
 }

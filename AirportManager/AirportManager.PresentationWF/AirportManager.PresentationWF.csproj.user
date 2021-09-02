@@ -22,9 +22,6 @@
     <Compile Update="Forms\AdminForms\SwitchForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\CashierForms\MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>

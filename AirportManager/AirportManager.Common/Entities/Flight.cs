@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace AirportManager.DataAccess.Models.LogicModels
+namespace AirportManager.Common.Entites
 {
     public partial class Flight
     {
         public DateTime Date { get; set; }
-        public virtual string Destination { get; set; }
-        public virtual Plane Plane { get; set; }
+        public string Destination { get; set; }
+        public Plane Plane { get; set; }
     }
 }

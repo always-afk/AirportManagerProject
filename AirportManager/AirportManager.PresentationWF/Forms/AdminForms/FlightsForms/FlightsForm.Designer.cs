@@ -76,6 +76,7 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.FlightsForms
             this.Name = "FlightsForm";
             this.Text = "FlightsForm";
             this.Load += new System.EventHandler(this.FlightsForm_Load);
+            this.Click += new System.EventHandler(this.FlightsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this._flightsTable)).EndInit();
             this.ResumeLayout(false);
 

@@ -41,9 +41,9 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.FlightsForms
             {
                 Date = f.Date,
                 Destination = f.Destination,
-                PlaneName = f.Plane.Name,
-                PlaneCode = f.Plane.Code
+                PlaneName = f.Plane.Name
             });
         }
+
     }
 }

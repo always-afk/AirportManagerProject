@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AirportManager.DataAccess.Models.LogicModels
+namespace AirportManager.Common.Entites
 {
-    public class Position
+    public class Plane
     {
-        public int Id { get; set; }
         public string Name { get; set; }
+        public int NumOfSeats { get; set; }
+        public string Staff { get; set; }
     }
 }

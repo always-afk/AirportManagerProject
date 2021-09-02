@@ -24,40 +24,38 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
 
         private void AddButtonClick(object sender, EventArgs e)
         {
-            if (_numOfSeatsTextBox.Text.All(Char.IsDigit))
+            if (_numOfSeatsTextBox.Text.All(Char.IsDigit) && _nameTextBox.Text.Length <= 64)
             {
-                if (_staffComboBox.Text == "None")
+                var Staff = "";
+                var name = _nameTextBox.Text;
+                var num = Convert.ToInt32(_numOfSeatsTextBox.Text);
+                if(_staffComboBox.SelectedIndex != 0)
                 {
-                    _addPlanesService.Add(new DataAccess.Models.LogicModels.Plane()
-                    {
-                        Name = _nameTextBox.Text,
-                        Code = _codeTextBox.Text,
-                        NumOfSeats = Convert.ToInt32(_numOfSeatsTextBox.Text)
-                    });
+                    Staff = _staffComboBox.Text;
                 }
-                else
-                {
-                    _addPlanesService.Add(new DataAccess.Models.LogicModels.Plane()
-                    {
-                        Name = _nameTextBox.Text,
-                        Code = _codeTextBox.Text,
-                        NumOfSeats = Convert.ToInt32(_numOfSeatsTextBox.Text),
-                        Staff = _staffComboBox.Text
-                    });
-                }
+                _addPlanesService.Add(name, num, Staff);
                 Close();
             }
-            
+            else
+            {
+                MessageBox.Show("Error");
+            }            
         }
 
         private void AddPlaneForm_Load(object sender, EventArgs e)
         {
             _staffComboBox.Items.Add("None");
-            var staff = _addPlanesService.GetStaff();
-            foreach(var s in staff)
+            var Staff = _addPlanesService.GetStaff();
+            foreach(var s in Staff)
             {
                 _staffComboBox.Items.Add(s.Name);
             }
+            _staffComboBox.SelectedIndex = 0;
+        }
+
+        private void BackButtonClick(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -14,7 +14,6 @@ namespace AirportManager.DataAccess.Models.DataModels
 
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Code { get; set; }
         public int NumOfSeats { get; set; }
         public int? StaffId { get; set; }
 

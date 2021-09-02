@@ -1488,10 +1488,21 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "AirportManager.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/AirportManager.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AirportManager.Common.dll": {}
+        }
+      },
       "AirportManager.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AirportManager.Common": "1.0.0",
           "AutoMapper": "10.1.1",
           "Microsoft.EntityFrameworkCore": "5.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9"
@@ -5750,6 +5761,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "AirportManager.Common/1.0.0": {
+      "type": "project",
+      "path": "../AirportManager.Common/AirportManager.Common.csproj",
+      "msbuildProject": "../AirportManager.Common/AirportManager.Common.csproj"
+    },
     "AirportManager.DataAccess/1.0.0": {
       "type": "project",
       "path": "../AirportManager.DataAccess/AirportManager.DataAccess.csproj",
@@ -5758,6 +5774,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "AirportManager.Common >= 1.0.0",
       "AirportManager.DataAccess >= 1.0.0"
     ]
   },
@@ -5793,6 +5810,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
+              "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj"
+            },
             "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj": {
               "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj"
             }

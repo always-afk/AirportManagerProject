@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AirportManager.DataAccess.Models;
-using AirportManager.DataAccess.Models.LogicModels;
+using AirportManager.Common.Entites;
 
 namespace AirportManager.DataAccess.Repositories.Interfaces
 {

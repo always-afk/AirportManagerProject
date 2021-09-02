@@ -1,4 +1,4 @@
-﻿using AirportManager.DataAccess.Models.LogicModels;
+﻿using AirportManager.Common.Entites;
 using AirportManager.DataAccess.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;

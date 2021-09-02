@@ -127,7 +127,6 @@ C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\
 C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.Forms.AdminForms.StaffForms.AddStaffForm.resources
 C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.Forms.AdminForms.StaffForms.StaffForm.resources
 C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.Forms.AdminForms.SwitchForm.resources
-C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.Forms.CachierForms.MainForm.resources
 C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.Forms.LoginForm.resources
 C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.Forms.PilotForms.MainForm.resources
 C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.csproj.GenerateResource.cache
@@ -140,3 +139,5 @@ C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\
 C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\ref\AirportManager.PresentationWF.dll
 C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.pdb
 C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.genruntimeconfig.cache
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.Forms.AdminForms.FlightsForms.AddFlightForm.resources
+C:\Users\artem\Studing\Courses\TMS\Project\AirportManagerProject\AirportManager\AirportManager.PresentationWF\obj\Debug\net5.0-windows\AirportManager.PresentationWF.Forms.AdminForms.FlightsForms.FlightsForm.resources

@@ -12,14 +12,14 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
 {
     public partial class StaffForm : Form
     {
-        private readonly BusinessLogic.Services.Interfaces.IStaffService _staffService;
+        private readonly BusinessLogic.Services.Interfaces.IStaffService _StaffService;
         private readonly Services.Interfaces.INavigationService _navigationService;
 
-        public StaffForm(BusinessLogic.Services.Interfaces.IStaffService staffService,
+        public StaffForm(BusinessLogic.Services.Interfaces.IStaffService StaffService,
             Services.Interfaces.INavigationService navigationService)
         {
             _navigationService = navigationService;
-            _staffService = staffService;
+            _StaffService = StaffService;
 
 
             InitializeComponent();
@@ -32,11 +32,11 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
 
         private void StaffForm_Load(object sender, EventArgs e)
         {
-            _staffTable.DataSource = _staffService.GetStaff().Select(e => new 
+            _StaffTable.DataSource = _StaffService.GetStaff().Select(e => new 
             {
                 Name = e.Name,
                 Age = e.Age,
-                Position = e.Position.Name,
+                Position = e.Position,
                 Login = e.User.Login,
                 Password = e.User.Password
             }).ToList();

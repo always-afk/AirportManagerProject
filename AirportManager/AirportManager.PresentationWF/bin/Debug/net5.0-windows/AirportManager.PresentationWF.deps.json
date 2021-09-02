@@ -1006,6 +1006,7 @@
       },
       "AirportManager.BusinessLogic/1.0.0": {
         "dependencies": {
+          "AirportManager.Common": "1.0.0",
           "AirportManager.DataAccess": "1.0.0"
         },
         "runtime": {
@@ -1019,6 +1020,7 @@
       },
       "AirportManager.DataAccess/1.0.0": {
         "dependencies": {
+          "AirportManager.Common": "1.0.0",
           "AutoMapper": "10.1.1",
           "Microsoft.EntityFrameworkCore": "5.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9"

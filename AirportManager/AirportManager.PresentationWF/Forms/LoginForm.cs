@@ -29,20 +29,20 @@ namespace AirportManager.PresentationWF.Forms
             if (curUser is not null)
             {
                 MessageBox.Show("Success");
-                switch (curUser.Position.Id)
+                switch (curUser.Position)
                 {
-                    case (int)Common.Enums.Positions.Admin:
+                    case Common.Enums.Positions.Admin:
                         Form adminForm = _navigationService.Navigate<AdminForms.SwitchForm>();
                         adminForm.Show();
                         break;
-                    case (int)Common.Enums.Positions.Pilot:
+                    case Common.Enums.Positions.Pilot:
                         Form pilotForm = _navigationService.Navigate<PilotForms.MainForm>();
                         pilotForm.Show();
                         break;
-                    case (int)Common.Enums.Positions.Cashier:
-                        Form cashierForm = _navigationService.Navigate<CachierForms.MainForm>();
-                        cashierForm.Show();
-                        break;
+                    //case (int)Common.Enums.Positions.Cashier:
+                    //    Form cashierForm = _navigationService.Navigate<CachierForms.MainForm>();
+                    //    cashierForm.Show();
+                    //    break;
                     default:
                         break;
                 }

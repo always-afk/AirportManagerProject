@@ -30,9 +30,9 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
         private void InitializeComponent()
         {
             this._addButton = new System.Windows.Forms.Button();
-            this._planesTable = new System.Windows.Forms.DataGridView();
             this._backButton = new System.Windows.Forms.Button();
             this._deleteButton = new System.Windows.Forms.Button();
+            this._planesTable = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this._planesTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,20 +46,6 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
             this._addButton.Text = "Add";
             this._addButton.UseVisualStyleBackColor = true;
             this._addButton.Click += new System.EventHandler(this.AddButtonClick);
-            // 
-            // _planesTable
-            // 
-            this._planesTable.AllowUserToAddRows = false;
-            this._planesTable.AllowUserToDeleteRows = false;
-            this._planesTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this._planesTable.Location = new System.Drawing.Point(14, 16);
-            this._planesTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this._planesTable.Name = "_planesTable";
-            this._planesTable.ReadOnly = true;
-            this._planesTable.RowHeadersWidth = 51;
-            this._planesTable.RowTemplate.Height = 25;
-            this._planesTable.Size = new System.Drawing.Size(773, 529);
-            this._planesTable.TabIndex = 4;
             // 
             // _backButton
             // 
@@ -83,18 +69,32 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
             this._deleteButton.UseVisualStyleBackColor = true;
             this._deleteButton.Click += new System.EventHandler(this.DeleteButtonClick);
             // 
+            // _planesTable
+            // 
+            this._planesTable.AllowUserToAddRows = false;
+            this._planesTable.AllowUserToDeleteRows = false;
+            this._planesTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this._planesTable.Location = new System.Drawing.Point(14, 12);
+            this._planesTable.Name = "_planesTable";
+            this._planesTable.ReadOnly = true;
+            this._planesTable.RowHeadersWidth = 51;
+            this._planesTable.RowTemplate.Height = 29;
+            this._planesTable.Size = new System.Drawing.Size(675, 520);
+            this._planesTable.TabIndex = 7;
+            // 
             // PlanesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 591);
+            this.ClientSize = new System.Drawing.Size(712, 591);
+            this.Controls.Add(this._planesTable);
             this.Controls.Add(this._deleteButton);
             this.Controls.Add(this._addButton);
-            this.Controls.Add(this._planesTable);
             this.Controls.Add(this._backButton);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PlanesForm";
             this.Text = "PlanesForm";
+            this.Activated += new System.EventHandler(this.PlanesForm_Load);
             this.Load += new System.EventHandler(this.PlanesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this._planesTable)).EndInit();
             this.ResumeLayout(false);
@@ -104,8 +104,8 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
         #endregion
 
         private System.Windows.Forms.Button _addButton;
-        private System.Windows.Forms.DataGridView _planesTable;
         private System.Windows.Forms.Button _backButton;
         private System.Windows.Forms.Button _deleteButton;
+        private System.Windows.Forms.DataGridView _planesTable;
     }
 }

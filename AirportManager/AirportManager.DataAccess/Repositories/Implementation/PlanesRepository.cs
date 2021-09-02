@@ -1,4 +1,4 @@
-﻿using AirportManager.DataAccess.Models.LogicModels;
+﻿using AirportManager.Common.Entites;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,25 +19,20 @@ namespace AirportManager.DataAccess.Repositories.Implementation
 
         public void AddPlane(Plane plane)
         {
+            var dplane = new Models.DataModels.Plane()
+            {
+                Name = plane.Name,
+                NumOfSeats = plane.NumOfSeats
+            };
             if (String.IsNullOrEmpty(plane.Staff))
             {
-                _context.Planes.Add(new Models.DataModels.Plane()
-                {
-                    Name = plane.Name,
-                    Code = plane.Code,
-                    NumOfSeats = plane.NumOfSeats
-                });
+                
             }
             else
             {
-                _context.Planes.Add(new Models.DataModels.Plane()
-                {
-                    Name = plane.Name,
-                    Code = plane.Code,
-                    NumOfSeats = plane.NumOfSeats,
-                    StaffId = _context.Staff.Where(s => s.Name == plane.Staff).FirstOrDefault().Id
-                });
-            }            
+                dplane.StaffId = _context.Staff.Where(s => s.Name == plane.Staff).FirstOrDefault().Id;
+            }
+            _context.Planes.Add(dplane);
         }
 
         public IEnumerable<Plane> LoadPlanes()
@@ -45,7 +40,6 @@ namespace AirportManager.DataAccess.Repositories.Implementation
             return _context.Planes.Select(p => new Plane
             {
                 Name = p.Name,
-                Code = p.Code,
                 NumOfSeats = p.NumOfSeats,
                 Staff = p.Staff.Name
             });

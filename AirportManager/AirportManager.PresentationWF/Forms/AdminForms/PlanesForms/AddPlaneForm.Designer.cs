@@ -30,29 +30,21 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
         private void InitializeComponent()
         {
             this._nameTextBox = new System.Windows.Forms.TextBox();
-            this._codeTextBox = new System.Windows.Forms.TextBox();
             this._numOfSeatsTextBox = new System.Windows.Forms.TextBox();
             this._staffComboBox = new System.Windows.Forms.ComboBox();
             this._nameLabel = new System.Windows.Forms.Label();
-            this._codeLabel = new System.Windows.Forms.Label();
             this._pilotLabel = new System.Windows.Forms.Label();
             this._numOfSeatsLabel = new System.Windows.Forms.Label();
             this._addButton = new System.Windows.Forms.Button();
+            this._backButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // _nameTextBox
             // 
-            this._nameTextBox.Location = new System.Drawing.Point(293, 78);
+            this._nameTextBox.Location = new System.Drawing.Point(293, 111);
             this._nameTextBox.Name = "_nameTextBox";
             this._nameTextBox.Size = new System.Drawing.Size(151, 27);
             this._nameTextBox.TabIndex = 0;
-            // 
-            // _codeTextBox
-            // 
-            this._codeTextBox.Location = new System.Drawing.Point(293, 111);
-            this._codeTextBox.Name = "_codeTextBox";
-            this._codeTextBox.Size = new System.Drawing.Size(151, 27);
-            this._codeTextBox.TabIndex = 1;
             // 
             // _numOfSeatsTextBox
             // 
@@ -73,20 +65,11 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
             // _nameLabel
             // 
             this._nameLabel.AutoSize = true;
-            this._nameLabel.Location = new System.Drawing.Point(238, 81);
+            this._nameLabel.Location = new System.Drawing.Point(238, 114);
             this._nameLabel.Name = "_nameLabel";
             this._nameLabel.Size = new System.Drawing.Size(49, 20);
             this._nameLabel.TabIndex = 4;
             this._nameLabel.Text = "Name";
-            // 
-            // _codeLabel
-            // 
-            this._codeLabel.AutoSize = true;
-            this._codeLabel.Location = new System.Drawing.Point(243, 114);
-            this._codeLabel.Name = "_codeLabel";
-            this._codeLabel.Size = new System.Drawing.Size(44, 20);
-            this._codeLabel.TabIndex = 5;
-            this._codeLabel.Text = "Code";
             // 
             // _pilotLabel
             // 
@@ -116,19 +99,28 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
             this._addButton.UseVisualStyleBackColor = true;
             this._addButton.Click += new System.EventHandler(this.AddButtonClick);
             // 
+            // _backButton
+            // 
+            this._backButton.Location = new System.Drawing.Point(12, 368);
+            this._backButton.Name = "_backButton";
+            this._backButton.Size = new System.Drawing.Size(94, 29);
+            this._backButton.TabIndex = 9;
+            this._backButton.Text = "Back";
+            this._backButton.UseVisualStyleBackColor = true;
+            this._backButton.Click += new System.EventHandler(this.BackButtonClick);
+            // 
             // AddPlaneForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this._backButton);
             this.Controls.Add(this._addButton);
             this.Controls.Add(this._numOfSeatsLabel);
             this.Controls.Add(this._pilotLabel);
-            this.Controls.Add(this._codeLabel);
             this.Controls.Add(this._nameLabel);
             this.Controls.Add(this._staffComboBox);
             this.Controls.Add(this._numOfSeatsTextBox);
-            this.Controls.Add(this._codeTextBox);
             this.Controls.Add(this._nameTextBox);
             this.Name = "AddPlaneForm";
             this.Text = "AddPlaneForm";
@@ -141,13 +133,12 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.PlanesForms
         #endregion
 
         private System.Windows.Forms.TextBox _nameTextBox;
-        private System.Windows.Forms.TextBox _codeTextBox;
         private System.Windows.Forms.TextBox _numOfSeatsTextBox;
         private System.Windows.Forms.ComboBox _staffComboBox;
         private System.Windows.Forms.Label _nameLabel;
-        private System.Windows.Forms.Label _codeLabel;
         private System.Windows.Forms.Label _pilotLabel;
         private System.Windows.Forms.Label _numOfSeatsLabel;
         private System.Windows.Forms.Button _addButton;
+        private System.Windows.Forms.Button _backButton;
     }
 }

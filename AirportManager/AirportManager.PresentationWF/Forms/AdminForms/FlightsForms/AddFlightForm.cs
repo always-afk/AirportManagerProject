@@ -16,5 +16,15 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.FlightsForms
         {
             InitializeComponent();
         }
+
+        private void BackButtonClick(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void AddButtonClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

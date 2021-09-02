@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AirportManager.BusinessLogic.Services.Interfaces;
-using AirportManager.DataAccess.Models.LogicModels;
+using AirportManager.Common.Entites;
 using AirportManager.DataAccess.Repositories.Interfaces;
 
 namespace AirportManager.BusinessLogic.Services.Implementation

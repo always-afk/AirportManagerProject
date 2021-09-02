@@ -1525,6 +1525,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "AirportManager.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/AirportManager.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AirportManager.Common.dll": {}
+        }
       }
     }
   },
@@ -5827,10 +5837,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "AirportManager.Common/1.0.0": {
+      "type": "project",
+      "path": "../AirportManager.Common/AirportManager.Common.csproj",
+      "msbuildProject": "../AirportManager.Common/AirportManager.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "AirportManager.Common >= 1.0.0",
       "AutoMapper >= 10.1.1",
       "Microsoft.EntityFrameworkCore >= 5.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.9",
@@ -5868,7 +5884,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
+              "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

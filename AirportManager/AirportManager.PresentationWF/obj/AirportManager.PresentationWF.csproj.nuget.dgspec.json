@@ -32,6 +32,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
+                "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj"
+              },
               "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj": {
                 "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj"
               }
@@ -151,7 +154,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
+                "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

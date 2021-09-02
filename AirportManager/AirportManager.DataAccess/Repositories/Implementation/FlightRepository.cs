@@ -1,4 +1,4 @@
-﻿using AirportManager.DataAccess.Models.LogicModels;
+﻿using AirportManager.Common.Entites;
 using AirportManager.DataAccess.Context;
 using System;
 using System.Collections.Generic;
@@ -31,7 +31,6 @@ namespace AirportManager.DataAccess.Repositories.Implementation
                 Plane = new Plane()
                 {
                     Name = f.Plane.Name,
-                    Code = f.Plane.Code,
                 }
                 
             });

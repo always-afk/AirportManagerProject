@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AirportManager.DataAccess.Models.LogicModels
+namespace AirportManager.Common.Entites
 {
     public class User
     {

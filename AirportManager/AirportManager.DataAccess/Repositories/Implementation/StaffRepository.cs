@@ -1,4 +1,5 @@
-﻿using AirportManager.DataAccess.Models.LogicModels;
+﻿using AirportManager.Common.Entites;
+using AirportManager.Common.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,11 +24,7 @@ namespace AirportManager.DataAccess.Repositories.Implementation
             {
                 Name = s.Name,
                 Age = s.Age,
-                Position = new Position
-                {
-                    Id = s.Position.Id,
-                    Name = s.Position.Name
-                },
+                Position = (Positions)s.PositionId,
                 User = new User
                 {
                     Login = s.User.Login,
@@ -42,7 +39,7 @@ namespace AirportManager.DataAccess.Repositories.Implementation
             {
                 Name = staff.Name,
                 Age = staff.Age,
-                PositionId = staff.Position.Id,
+                PositionId = (int)staff.Position,
                 User = new Models.DataModels.User
                 {
                     Login = staff.User.Login,

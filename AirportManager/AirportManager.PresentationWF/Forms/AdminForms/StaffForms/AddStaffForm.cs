@@ -1,4 +1,5 @@
 ﻿using AirportManager.BusinessLogic.Services.Interfaces;
+using AirportManager.Common.Entites;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -40,29 +41,24 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.StaffForms
 
         private void AddButtonClick(object sender, EventArgs e)
         {
-            var person = new DataAccess.Models.LogicModels.Staff();
-
-            try
+            var person = new Staff();
+            if (CheckInput())
             {
                 person.Name = _nameTextBox.Text;
-                person.Age = Convert.ToInt32(_ageTextBox.Text);
-                person.Position = new DataAccess.Models.LogicModels.Position()
-                {
-                    Id = _positionComboBox.SelectedIndex,
-                    Name = _positionComboBox.SelectedItem.ToString()
-                };
-                person.User = new DataAccess.Models.LogicModels.User()
+                person.Age = Int32.Parse(_ageTextBox.Text);
+                person.Position = (Common.Enums.Positions)_positionComboBox.SelectedIndex;
+                person.User = new User
                 {
                     Login = _loginTextBox.Text,
                     Password = _passwordTextBox.Text
                 };
                 _service.AddStaff(person);
-                Close();
             }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            
+        }
+        private bool CheckInput()
+        {
+            return true;
         }
     }
 }
