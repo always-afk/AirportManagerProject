@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {}
+    "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {}
   },
   "projects": {
-    "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
+    "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj",
+        "projectUniqueName": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj",
         "projectName": "AirportManager.Common",
-        "projectPath": "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj",
+        "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj",
         "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-        "outputPath": "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.Common\\obj\\",
+        "outputPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -5860,11 +5860,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj",
       "projectName": "AirportManager.DataAccess",
-      "projectPath": "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj",
+      "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj",
       "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-      "outputPath": "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5885,8 +5885,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
-              "projectPath": "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj"
+            "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
+              "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj"
             }
           }
         }

@@ -16,6 +16,7 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.FlightsForms
     {
         private readonly INavigationService _navigation;
         private readonly IFlightsService _flightsService;
+        private DataTable _dataTable;
 
         public FlightsForm(INavigationService navigation, IFlightsService flightsService)
         {
@@ -38,12 +39,21 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.FlightsForms
 
         private void FlightsForm_Load(object sender, EventArgs e)
         {
-            _flightsTable.DataSource = _flightsService.GetFlights().ToList().Select(f => new 
+            _dataTable = new DataTable();
+            _dataTable.Columns.Add("Destination", typeof(string));
+            _dataTable.Columns.Add("Date", typeof(DateTime));
+            _dataTable.Columns.Add("Plane", typeof(string));
+            var flights = _flightsService.GetFlights().ToList().Select(f => new
             {
                 Date = f.Date,
                 Destination = f.Destination,
                 PlaneName = f.Plane.Name
             });
+            foreach(var fl in flights)
+            {
+                _dataTable.Rows.Add(fl.Destination, fl.Date, fl.PlaneName);
+            }
+            _flightsTable.DataSource = _dataTable;
         }
 
     }

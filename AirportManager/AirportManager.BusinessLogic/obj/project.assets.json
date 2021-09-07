@@ -5785,11 +5785,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj",
+      "projectUniqueName": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj",
       "projectName": "AirportManager.BusinessLogic",
-      "projectPath": "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj",
+      "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.BusinessLogic\\AirportManager.BusinessLogic.csproj",
       "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-      "outputPath": "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.BusinessLogic\\obj\\",
+      "outputPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5810,11 +5810,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
-              "projectPath": "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj"
+            "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj": {
+              "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.Common\\AirportManager.Common.csproj"
             },
-            "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj": {
-              "projectPath": "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj"
+            "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.DataAccess\\AirportManager.DataAccess.csproj"
             }
           }
         }

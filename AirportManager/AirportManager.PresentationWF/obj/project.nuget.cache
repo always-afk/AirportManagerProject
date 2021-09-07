@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BfXTJWTpTPaeR4q4Va1UGPpJP7wCxLr6qfYMsYOiywOzC/OAizM00rUXl1D2S0mTEdcD0U+xrhTfP60RYt93Iw==",
+  "dgSpecHash": "pK1PHYb+lXkd/CiXC4Laqz8Xt4sVRya4Uu6qcuR0DblxIZwzoFMNugde5V4SPlcHp6wR/5gFZcfbFUkybL6ibw==",
   "success": true,
-  "projectFilePath": "D:\\Artyom\\Studing\\PandaDoc\\Courses\\Tasks\\AirportManagerProject\\AirportManager\\AirportManager.PresentationWF\\AirportManager.PresentationWF.csproj",
+  "projectFilePath": "C:\\Users\\artem\\Studing\\Courses\\TMS\\Project\\AirportManagerProject\\AirportManager\\AirportManager.PresentationWF\\AirportManager.PresentationWF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artem\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
