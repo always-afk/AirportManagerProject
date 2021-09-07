@@ -25,6 +25,7 @@ namespace AirportManager.DataAccess.Repositories.Implementation
                 Destination = flight.Destination,
                 PlaneId = _context.Planes.Where(p => p.Name == flight.Plane.Name).FirstOrDefault().Id
             });
+            _context.SaveChanges();
         }
 
         public IEnumerable<Flight> LoadFlights()
