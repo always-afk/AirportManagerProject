@@ -3,18 +3,18 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace AirportManager.DataAccess.Models.DataModels
+namespace AirportManager.PresentationWF.Models.DataModels
 {
     public partial class Position
     {
         public Position()
         {
-            Staff = new HashSet<Staff>();
+            staff = new HashSet<staff>();
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public virtual ICollection<Staff> Staff { get; set; }
+        public virtual ICollection<staff> staff { get; set; }
     }
 }

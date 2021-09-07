@@ -38,5 +38,11 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
             Form form = _navigationService.Navigate<PlanesForms.PlanesForm>();
             form.Show();
         }
+
+        private void FlightsButtonClick(object sender, EventArgs e)
+        {
+            Form form = _navigationService.Navigate<FlightsForms.FlightsForm>();
+            form.Show();
+        }
     }
 }

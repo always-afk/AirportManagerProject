@@ -32,6 +32,7 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
             this._backButton = new System.Windows.Forms.Button();
             this._StaffButton = new System.Windows.Forms.Button();
             this._planesButton = new System.Windows.Forms.Button();
+            this._flightsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // _backButton
@@ -64,11 +65,22 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
             this._planesButton.UseVisualStyleBackColor = true;
             this._planesButton.Click += new System.EventHandler(this.PlanesButtonClick);
             // 
+            // _flightsButton
+            // 
+            this._flightsButton.Location = new System.Drawing.Point(188, 223);
+            this._flightsButton.Name = "_flightsButton";
+            this._flightsButton.Size = new System.Drawing.Size(75, 23);
+            this._flightsButton.TabIndex = 3;
+            this._flightsButton.Text = "Flights";
+            this._flightsButton.UseVisualStyleBackColor = true;
+            this._flightsButton.Click += new System.EventHandler(this.FlightsButtonClick);
+            // 
             // SwitchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(445, 450);
+            this.Controls.Add(this._flightsButton);
             this.Controls.Add(this._planesButton);
             this.Controls.Add(this._StaffButton);
             this.Controls.Add(this._backButton);
@@ -83,5 +95,6 @@ namespace AirportManager.PresentationWF.Forms.AdminForms
         private System.Windows.Forms.Button _backButton;
         private System.Windows.Forms.Button _StaffButton;
         private System.Windows.Forms.Button _planesButton;
+        private System.Windows.Forms.Button _flightsButton;
     }
 }

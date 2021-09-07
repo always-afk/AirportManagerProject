@@ -19,14 +19,19 @@ namespace AirportManager.DataAccess.Repositories.Implementation
 
         public void Add(Flight flight)
         {
-            throw new NotImplementedException();
+            _context.Flights.Add(new Models.DataModels.Flight()
+            {
+                Date = flight.Date,
+                Destination = flight.Destination,
+                PlaneId = _context.Planes.Where(p => p.Name == flight.Plane.Name).FirstOrDefault().Id
+            });
         }
 
         public IEnumerable<Flight> LoadFlights()
         {
             return _context.Flights.Select(f => new Flight()
             {
-                Destination = f.Destination.Name,
+                Destination = f.Destination,
                 Date = f.Date,
                 Plane = new Plane()
                 {

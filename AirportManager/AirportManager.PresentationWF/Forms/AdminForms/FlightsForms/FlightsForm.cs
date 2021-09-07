@@ -17,11 +17,12 @@ namespace AirportManager.PresentationWF.Forms.AdminForms.FlightsForms
         private readonly INavigationService _navigation;
         private readonly IFlightsService _flightsService;
 
-        public FlightsForm(INavigationService navigation)
+        public FlightsForm(INavigationService navigation, IFlightsService flightsService)
         {
             InitializeComponent();
 
             _navigation = navigation;
+            _flightsService = flightsService;
         }
 
         private void BackButtonClick(object sender, EventArgs e)

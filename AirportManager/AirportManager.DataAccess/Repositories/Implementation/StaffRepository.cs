@@ -33,23 +33,23 @@ namespace AirportManager.DataAccess.Repositories.Implementation
             });
         }
 
-        public void Add(Staff staff)
+        public void Add(Staff Staff)
         {
             _context.Staff.Add(new Models.DataModels.Staff()
             {
-                Name = staff.Name,
-                Age = staff.Age,
-                PositionId = (int)staff.Position,
+                Name = Staff.Name,
+                Age = Staff.Age,
+                PositionId = (int)Staff.Position,
                 User = new Models.DataModels.User
                 {
-                    Login = staff.User.Login,
-                    Password = staff.User.Password
+                    Login = Staff.User.Login,
+                    Password = Staff.User.Password
                 }
             });
             _context.SaveChanges();
         }
 
-        public void Save(List<Staff> staff)
+        public void Save(List<Staff> Staff)
         {
             throw new NotImplementedException();
         }

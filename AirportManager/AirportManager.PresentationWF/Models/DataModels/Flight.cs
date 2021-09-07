@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace AirportManager.DataAccess.Models.DataModels
+namespace AirportManager.PresentationWF.Models.DataModels
 {
     public partial class Flight
     {

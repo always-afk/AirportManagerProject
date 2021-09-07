@@ -63,6 +63,10 @@ namespace AirportManager.PresentationWF
                 BusinessLogic.Services.Implementation.PlanesService>();
             _container.Register<BusinessLogic.Services.Interfaces.IAddPlanesService,
                 BusinessLogic.Services.Implementation.AddPlaneService>();
+            _container.Register<BusinessLogic.Services.Interfaces.IFlightsService,
+                BusinessLogic.Services.Implementation.FlightsService>();
+            _container.Register<BusinessLogic.Services.Interfaces.IAddFlightsService,
+                BusinessLogic.Services.Implementation.AddFlightsService>();
         }
 
         static void RegisterDataAccess()
@@ -73,6 +77,8 @@ namespace AirportManager.PresentationWF
                 DataAccess.Repositories.Implementation.StaffRepository>();
             _container.Register<DataAccess.Repositories.Interfaces.IPlanesRepository,
                 DataAccess.Repositories.Implementation.PlanesRepository>();
+            _container.Register<DataAccess.Repositories.Interfaces.IFlightsRepository,
+                DataAccess.Repositories.Implementation.FlightRepository>();
         }
 
         static void RegisterContext()

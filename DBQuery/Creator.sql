@@ -13,10 +13,10 @@ drop table if exists Countries
 
 go
 
-create table Countries(
-	Id int primary key identity(1,1),
-	[Name] nvarchar(64) unique not null
-)
+--create table Countries(
+--	Id int primary key identity(1,1),
+--	[Name] nvarchar(64) unique not null
+--)
 
 go
 
@@ -47,7 +47,6 @@ go
 create table Planes(
 	Id int primary key identity(1,1),
 	[Name] nvarchar(64) not null,
-	[Code] nvarchar(8) unique not null,
 	[NumOfSeats] int not null,
 	[StaffId] int references Staff(Id) null
 )
@@ -56,11 +55,11 @@ go
 
 
 
-create table Clients(
-	Id int primary key identity(1,1),
-	[Name] nvarchar(64) not null,
-	[Age] int null
-)
+--create table Clients(
+--	Id int primary key identity(1,1),
+--	[Name] nvarchar(64) not null,
+--	[Age] int null
+--)
 
 go
 
@@ -68,36 +67,33 @@ create table Flights(
 	Id int primary key identity(1,1),
 	[Date] datetime not null,
 	PlaneId int references Planes(Id),
-	DestinationId int references Countries(Id),
+	Destination nvarchar(64),
 )
 
 go
 
-create table Tickets(
-	Id int primary key identity(1,1),
-	[Date] datetime not null,
-	[Price] float not null,
-	[ClientId] int references Clients(Id),
-	[FlightId] int references Flights(Id)
-)
+--create table Tickets(
+--	Id int primary key identity(1,1),
+--	[Date] datetime not null,
+--	[Price] float not null,
+--	[ClientId] int references Clients(Id),
+--	[FlightId] int references Flights(Id)
+--)
 
 go
 
 insert Positions values
 ('Admin'),
-('Pilot'),
-('Cashier')
+('Pilot')
 
 go
 
 insert Staff values
 ('Admin', 0, 1),
-('Pilot', 0, 2),
-('Cashier', 0, 3)
+('Pilot', 0, 2)
 
 go
 
 insert Users values
 (1, 'admin', 'admin'),
-(2, 'pilot', 'pilot'),
-(3, 'cashier', 'cashier')
+(2, 'pilot', 'pilot')

@@ -10,7 +10,7 @@ namespace AirportManager.DataAccess.Repositories.Interfaces
     public interface IStaffRepository
     {
         public IEnumerable<Staff> LoadStaff();
-        public void Add(Staff staff);
-        public void Save(List<Staff> staff);
+        public void Add(Staff Staff);
+        public void Save(List<Staff> Staff);
     }
 }
